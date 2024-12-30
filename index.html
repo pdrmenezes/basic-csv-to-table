@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic CSV to Table</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container" id="container">
+        <h1>CSV to Table</h1>
+        <form id="csvForm">
+          <div class="input-group">
+            <label for="csvFile">Select CSV File:</label>
+            <input
+              type="file"
+              id="csvFile"
+              name="csvFile"
+              accept=".csv"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="separator">CSV Separator:</label>
+            <input
+              type="text"
+              id="separator"
+              name="separator"
+              value=","
+              required
+              maxlength="1"
+            />
+          </div>
+          <button type="submit">Upload</button>
+          <p id="message" class="message"></p>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
